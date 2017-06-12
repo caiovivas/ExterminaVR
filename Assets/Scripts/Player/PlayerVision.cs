@@ -16,6 +16,7 @@ public class PlayerVision : MonoBehaviour {
 		RaycastHit hit;
 		if (Physics.Raycast (eye.position, eye.forward, out hit, 100f, visionLayer)) {
 			return hit.transform;
-		}	
+		}
+		return null;
 	}
 }
