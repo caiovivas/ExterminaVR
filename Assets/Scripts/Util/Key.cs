@@ -9,6 +9,7 @@ public class Key : MonoBehaviour {
 	public bool right;
 	public Keypad kp;
 	public MeshRenderer mre;
+	public AudioClip clickSound;
 
 	void Start(){
 		right = (currentDigit == solution);
@@ -27,6 +28,8 @@ public class Key : MonoBehaviour {
 		mre.material.mainTexture = kp.keyDigits [currentDigit];
 
 		right = (currentDigit == solution);
+
+		GameManager.PlaySound (clickSound);
 
 		kp.OnChange ();
 
