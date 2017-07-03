@@ -111,6 +111,6 @@ public class Macbonner : MonoBehaviour {
 	}
 
 	void KillPlayerBackToMenu(){
-		GameManager.LoadScene ("menu", new Vector3(0,0,0));
+		GameManager.LoadScene ("menu2", new Vector3(0,0,0));
 	}
 }
