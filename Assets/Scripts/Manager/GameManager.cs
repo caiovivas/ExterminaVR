@@ -74,5 +74,6 @@ public class GameManager : MonoBehaviour {
 		if (playOnLoad != null)
 			PlaySound (playOnLoad);
 		playOnLoad = null;
+		macbonnerObject.GetComponent<Macbonner> ().Despawn ();
 	}
 }
